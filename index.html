@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zainab Al-Saeed | Interactive Portfolio</title>
+    <!-- ربط ملف التصميم التفاعلي CSS -->
+    <link rel="stylesheet" href="../style/style.css">
+    <!-- مكتبة الأيقونات الفاخرة FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- شريط التنقل العلوي متضمناً منتقي اللغات الجديد -->
+    <header>
+        <div class="logo">Zainab.<span>Dev</span></div>
+        
+        <!-- صندوق اختيار اللغات الخمس -->
+        <div class="language-switcher">
+            <i class="fas fa-globe"></i>
+            <select id="langSelect" onchange="changeLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="ar">العربية</option>
+                <option value="zh">中文 (Chinese)</option>
+                <option value="ja">日本語 (Japanese)</option>
+                <option value="ko">한국어 (Korean)</option>
+            </select>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#home" id="nav-home">Home</a></li>
+                <li><a href="#about" id="nav-about">About</a></li>
+                <li><a href="#education" id="nav-education">Education</a></li>
+                <li><a href="#experience" id="nav-experience">Experience</a></li>
+                <li><a href="#projects" id="nav-projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- الواجهة الرئيسية (Hero Section) -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h3 id="hero-welcome">Welcome to my space, I am</h3>
+            <h1 id="hero-name">Zainab Al-Saeed</h1>
+            <h2><span id="hero-title">Software Engineering Student</span> <span class="typing-text"></span></h2>
+            <p id="hero-desc">Highly driven and results-oriented Software Engineering student with a proven track record of leveraging technology to solve complex healthcare and business challenges.</p>
+            
+            <div class="social-icons">
+                <a href="mailto:alsaeedzainab21@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="
+https://www.linkedin.com/in/zainab-al-saeed-671012279?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/zizi-sa" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <a href="#about" class="btn" id="hero-btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- قسم نبذة عني والمعلومات الشخصية (About Section) -->
+    <section id="about" class="about-section">
+        <h2 class="section-title" id="title-about">About Me</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p id="about-p">I blend strong foundational skills in programming (Python, Java) and system infrastructure (Linux) with professional customer-facing experience. Possessing an exceptional aptitude for crisis management and rapid technical adaptability.</p>
+                
+                <div class="personal-info-box">
+                    <p><strong id="lbl-dob"><i class="fas fa-calendar-alt"></i> Date of Birth:</strong> <span>2003-09-12</span></p> <!-- ضعي تاريخ ميلادك هنا -->
+                    <p><strong id="lbl-loc"><i class="fas fa-map-marker-alt"></i> Location:</strong> <span id="val-loc">Riyadh, Saudi Arabia</span></p>
+                    <p><strong id="lbl-lang"><i class="fas fa-language"></i> Languages:</strong> <span id="val-lang">Arabic (Native), English (Fluent), Japanese (Intermediate), Korean (Beginner)</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التعليم (Education Section) -->
+    <section id="education" class="education-section">
+        <h2 class="section-title" id="title-edu">Education</h2>
+        <div class="education-container">
+            <div class="education-card">
+                <h3 id="edu-degree">Bachelor of Science in Software Engineering (BSE)</h3>
+                <h4 id="edu-uni">Al Yamamah University, Riyadh | 2023 – Present</h4>
+                <p id="edu-courses"><strong>Core Coursework:</strong> Object-Oriented Programming (Java), Software Architecture, Data Structures & Algorithms, Database Management Systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الخبرات الوظيفية (Experience Section) -->
+    <section id="experience" class="experience-section">
+        <h2 class="section-title" id="title-exp">Experience</h2>
+        <div class="experience-grid">
+            <div class="experience-card">
+                <h3 id="exp1-role">Receptionist</h3>
+                <h4 id="exp1-comp">Saudi MAS, Riyadh | Mar 2025 – Oct 2025</h4>
+                <p id="exp1-desc">Maintained operational workflow continuity under high-traffic periods, utilizing proactive communication and administrative agility.</p>
+            </div>
+            <div class="experience-card">
+                <h3 id="exp2-role">Sales Specialist & Consultant</h3>
+                <h4 id="exp2-comp">Nexfit, Riyadh | Dec 2023 – Jun 2024</h4>
+                <p id="exp2-desc">Acted as a client advisor, analyzing individual customer requirements to deliver tailored consulting advice and service packages.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المشاريع التفاعلي المضيء (Projects Section) -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title" id="title-proj">Honors & Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-info">
+                    <span class="badge" id="proj-badge"><i class="fas fa-trophy"></i> 3rd Place Winner</span>
+                    <h3 id="proj-title">BioPatch SOS (Healthoon Hackathon)</h3>
+                    <p id="proj-desc">A cutting-edge medical device and software ecosystem designed for chronic disease tracking and emergency response, integrated with Starlink for offline capabilities.</p>
+                    <span class="tech-stack">HTML • CSS • JS • Python • SoC</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة (Footer) -->
+    <footer>
+        <p id="footer-text">All Rights Reserved © 2026 | Designed & Coded by Zainab Al-Saeed</p>
+    </footer>
+
+    <!-- ربط ملف الجافا سكربت الذكي واللغات -->
+    <script src="../app/script.js"></script>
+</body>
+</html>
